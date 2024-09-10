@@ -2,28 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../assets/styles/portfolio-home.css">
+    <title>Portfolio</title>
+
     <title>Portfolio</title>
 </head>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        font-family: 'poppins', SansSerif;
+    }
+    #home{
+       background-image:url("assets/images/moon.jpg");
+       /* background-color: hsl(37, 87%, 49%);*/
+        height: 500px;
+        width:  1000px;
+
+    }
+    #home>h1{
+        text-align: justify-all;
+        color: white;
+    }
+    #home>header>nav{
+        right: 0;
+        Text-decoration : none
+    }
+
 
 </style>
 <body>
 <!--Home page--> 
-<img src="">
-<header>
+
+<section id="home">
+    <header>
+
     <div class="logo">
         <h1>Ayesha</h1>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Assignments</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+
+    <nav class="navbar">
+        <a href="#home" class="nvg">Home</a>
+        <a href="#about" class="nvg">About Me</a>
+        <a href="#projct" class="nvg">Projects</a>
+        <a href="#assgnmnt" class="nvg">Assignments</a>
+        <a href="#educ" class="nvg">Education</a>
+        <a href="#skill" class="nvg">Skills</a>
+        <a href="#contact" class="nvg">Contact</a>
     </nav>
 </header>
 
@@ -36,6 +76,7 @@
         <p>"Welcome to my portfolio! I am a dedicated software developer with a passion for creating innovative, efficient, and scalable solutions."</p>
     </section>
 </main>
+</section>
  <!--about page-->
 <div>
 
