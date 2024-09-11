@@ -26,22 +26,65 @@
         scroll-behavior: smooth;
     }
     body{
-        font-family: 'poppins', SansSerif;
+        font-family: "poppins", Sans-Serif;
     }
     #home{
-       background-image:url("assets/images/moon.jpg");
-       /* background-color: hsl(37, 87%, 49%);*/
-        height: 500px;
-        width:  1000px;
+
+        height: 100vh;
+        width:  100%;
+        display: flex;
+
 
     }
-    #home>h1{
-        text-align: justify-all;
-        color: white;
+
+    nav>ul{
+        height: 15vh;
+        display: flex;
+        width: 100%;
+        gap: 3.5rem;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+
+
     }
-    #home>header>nav{
-        right: 0;
-        Text-decoration : none
+
+    nav>ul>li>a{
+        Text-decoration : none;
+        gap: 3.5rem;
+        color: white;
+
+    }
+    nav>ul>li{
+        list-style: none;
+    }
+   #home>.left-con{
+        background: #262525;
+        width: 70%;
+
+    }
+   #home> .right-con{
+        background: #3877FF;
+        width: 30%;
+
+    }
+    .right-con,.left-con{
+        height: 100vh;
+
+    }
+    #about{
+        position: sticky;
+        background: skyblue;
+        height: 100vh;
+        width:  100%;
+
+    }
+    #project{
+        position: sticky;
+        background: lightblue;
+        height: 100vh;
+        width:  100%;
+
     }
 
 
@@ -50,34 +93,39 @@
 <!--Home page--> 
 
 <section id="home">
-    <header>
+
 
     <div class="logo">
         <h1>Ayesha</h1>
     </div>
 
     <nav class="navbar">
-        <a href="#home" class="nvg">Home</a>
-        <a href="#about" class="nvg">About Me</a>
-        <a href="#projct" class="nvg">Projects</a>
-        <a href="#assgnmnt" class="nvg">Assignments</a>
-        <a href="#educ" class="nvg">Education</a>
-        <a href="#skill" class="nvg">Skills</a>
-        <a href="#contact" class="nvg">Contact</a>
+        <ul>
+            <li> <a href="#home" class="nvg">Home</a></li>
+            <li> <a href="#about" class="nvg">About Me</a></li>
+            <li> <a href="#projct" class="nvg">Projects</a></li>
+            <li> <a href="#assgnmnt" class="nvg">Assignments</a></li>
+            <li> <a href="#educ" class="nvg">Education</a></li>
+            <li> <a href="#skill" class="nvg">Skills</a></li>
+            <li>  <a href="#contact" class="nvg">Contact</a></li>
+        </ul>
     </nav>
-</header>
 
-<main>
+    <div class="left-con"></div>
+    <div class="right-con"></div>
+<!--<main>
+
     <section class="intro">
 
         <h2>Hello, it's me</h2>
         <h1>Ayesha Ushani</h1>
-        <h2>And I'm a <span>UI/UX Designer</span></h2>
-        <p>"Welcome to my portfolio! I am a dedicated software developer with a passion for creating innovative, efficient, and scalable solutions."</p>
+       <span> <h2>And I'm a <span>UI/UX Designer</span></h2></span>
+       <span> <p>"Welcome to my portfolio! I am a dedicated software developer with a passion for creating innovative, efficient, and scalable solutions."</p></span>
     </section>
-</main>
+</main>-->
 </section>
  <!--about page-->
+<section id="about">
 <div>
 
     <div>
@@ -93,8 +141,9 @@
             I'm eager to build my expertise and apply my skills in real-world projects. Outside of design, I enjoy traveling and photography, which fuel my creativity and perspective. I also participate in design-related community events and volunteer for local design initiatives.
         </p>
     </div>
-</div>
+</div></section>
 <!--projects-->
+<section id="project">
 <div>
     <div>
 
@@ -117,8 +166,8 @@
         </div>
         <div>
 
-            <h3>GS Book Plaza</h3>
-            <p>Order manager for a bookstore, developed using Java and JavaFX.</p>
+            <h3>Hemantha Enterprise system</h3>
+            <p>Order manager for a delivery system, developed using Java and JavaFX.</p>
 
         </div>
     </div>
@@ -129,7 +178,7 @@
         </p>
     </div>
 </div>
-
+</section>
 <!--Assignments-->
 <div>
 
