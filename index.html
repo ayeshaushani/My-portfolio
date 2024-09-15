@@ -13,15 +13,31 @@
     <link rel="stylesheet" href="../assets/styles/normalize.css">
     <link rel="stylesheet" href="../assets/styles/portfolio-home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Portfolio</title>
 
     <title>Portfolio</title>
 </head>
 <style>
+
+    .animate__animated.animate__bounce {
+        --animate-duration: 2s;
+    }
+
+    /* This changes all the animations globally */
+    :root {
+        --animate-duration: 800ms;
+        --animate-delay: 0.9s;
+    }
     *{
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+    box-sizing: border-box;
     }
     html{
         scroll-behavior: smooth;
@@ -82,6 +98,7 @@
         color: #BBB;
         font-size: 2rem;
     }
+
     .icon{
         display: flex;
         flex-direction: column;
@@ -226,16 +243,16 @@
         </ul>
     </nav>
 
-    <div class="left-con">
-        <div class="icon">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-medium"></i>
+    <div class="left-con" >
+        <div class="icon" >
+           <i class="fa-brands fa-facebook" > </i>
+            <i class="fa-brands fa-linkedin" ></i>
+            <i class="fa-brands fa-github" ></i>
+            <i class="fa-brands fa-medium" ></i>
         </div>
         <div class="content">
             <p class="intro">Hi! I am <span> Ayesha ushani</span></p>
-            <h1>Web Developer</h1>
+            <h1 class=" animate__animated animate__bounce">Web Developer</h1>
             <p class="details">I am a skilled web developer focused on creating responsive, user-friendly websites.
                 With a keen eye for design and strong coding abilities, I build efficient and
                 visually appealing digital solutions. My goal is to craft websites
@@ -258,7 +275,7 @@
 <section id="about">
 <div>
 
-    <div>
+    <div >
 
         <h2>LET ME INTRODUCE</h2>
         <blockquote>
@@ -545,5 +562,12 @@
 
 
 
+
+
+<script>
+    AOS.init();
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
