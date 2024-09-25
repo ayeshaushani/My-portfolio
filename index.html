@@ -9,7 +9,7 @@
     <meta name="keywords" content="java, html, css, js, go, react, angular">
     <meta name="author" content="ijse">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/dp.jpeg"> <!-- Favicon -->
     <link rel="stylesheet" href="../assets/styles/normalize.css">
     <link rel="stylesheet" href="../assets/styles/portfolio-home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,10 +21,9 @@
     />
     <title>Portfolio</title>
 
-    <title>Portfolio</title>
 </head>
 <style>
-
+/*hero section*/
     .animate__animated.animate__bounce {
         --animate-duration: 2s;
     }
@@ -37,7 +36,7 @@
     *{
         margin: 0;
         padding: 0;
-    box-sizing: border-box;
+        box-sizing: border-box;
     }
     html{
         scroll-behavior: smooth;
@@ -50,8 +49,6 @@
         height: 100vh;
         width:  100%;
         display: flex;
-
-
     }
 
     .navbar>ul{
@@ -82,7 +79,7 @@
        padding-left: 3rem;
     }
    #home> .right-con{
-        background: #3877FF;
+        background: linear-gradient(-50deg, #3877FF, #262525);
         width: 30%;
 
     }
@@ -94,7 +91,7 @@
 
 
     }
-    .left-con> .icon> .fa-brands{
+    .left-con> .icon> a> .fa-brands  {
         color: #BBB;
         font-size: 2rem;
     }
@@ -153,7 +150,7 @@
         background: #5DB9EE;
         color: #262525;
     }
-    .icon>.fa-brands:hover{
+    .icon> a>.fa-brands:hover{
         cursor: pointer;
         background: linear-gradient(#FFF , #3877FF);
         -webkit-background-clip: text;
@@ -201,23 +198,109 @@
         transform: scaleX(1);
         transform-origin: bottom left;
     }
-    #about{
-        position: sticky;
-        background: skyblue;
-        height: 100vh;
-        width:  100%;
-
-    }
-    #project{
-        position: sticky;
-        background: lightblue;
-        height: 100vh;
-        width:  100%;
-
-    }
     .active{
         position: relative;
     }
+
+    #about{
+        height: 100vh;
+        width:  100%;
+        display: flex;
+        background: #262525;
+
+    }
+    #about>.main>img{
+        height: 90vh;
+        width: 480px;
+        margin-right: 150px;
+    }
+    .about-text{
+        width: 550px;
+    }
+    .main{
+        width:1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about-text>h2{
+        color: #5DB9EE;
+        font-size: 75px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+
+    }
+
+    .about-text>h5{
+        color: #FFFFFF;
+        letter-spacing: 22px;
+        font-size: 22px;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+
+    }
+    .about-text>h5>span{
+        color: #5DB9EE;
+    }
+
+    .about-text>p{
+        color: #FFFFFF;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+    button{
+        background: transparent;
+        color: #5DB9EE;
+        border: 0.1rem solid #5DB9EE;
+        font-size: 1.1rem;
+        padding: 0.8rem 1.5rem ;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    button:hover{
+        background: #5DB9EE;
+        color: #262525;
+    }
+    .project{
+        height: 100vh;
+        width:  100%;
+        background: #262525;
+        padding: 100px 0;
+
+    }
+    .title>h2{
+        color: #FFFFFF;
+        font-size: 75px;
+        width: 1130px;
+        margin: 30px auto;
+        text-align: center;
+    }
+    .box{
+       display: inline-block;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+
+    }
+    .card{
+        height: 365px;
+        width: 335px;
+        padding: 20px 35px;
+        background: #BBBBBB;
+        border-radius: 20px;
+        margin: 35px;
+        position: relative;
+        overflow:hidden ;
+        text-align: center;
+
+
+    }
+
 
 
 </style>
@@ -227,16 +310,12 @@
 <section id="home">
 
 
-   <!-- <div class="logo">
-        <h1>Ayesha</h1>
-    </div>-->
-
     <nav class="navbar">
         <ul>
             <li class="active"> <a href="#home" class="active">Home</a></li>
             <li> <a href="#about" class="nvg">About Me</a></li>
-            <li> <a href="#projct" class="nvg">Projects</a></li>
-            <li> <a href="#assgnmnt" class="nvg">Assignments</a></li>
+            <li> <a href="#project" class="nvg">Projects</a></li>
+            <li> <a href="#assignments" class="nvg">Assignments</a></li>
             <li> <a href="#educ" class="nvg">Education</a></li>
             <li> <a href="#skill" class="nvg">Skills</a></li>
             <li>  <a href="#contact" class="nvg">Contact</a></li>
@@ -245,10 +324,10 @@
 
     <div class="left-con" >
         <div class="icon" >
-           <i class="fa-brands fa-facebook" > </i>
-            <i class="fa-brands fa-linkedin" ></i>
-            <i class="fa-brands fa-github" ></i>
-            <i class="fa-brands fa-medium" ></i>
+            <a href="https://www.facebook.com/akisa.senari?sfnsn=wa&mibextid=RUbZ1f">  <i class="fa-brands fa-facebook"  > </i> </a>
+            <a href="www.linkedin.com/in/ayesha-ushani-310b64318"> <i class="fa-brands fa-linkedin" > </i></a>
+             <a href="https://github.com/ayeshaushani"><i class="fa-brands fa-github" > </i></a>
+           <a href="https://medium.com/?source=---two_column_layout_nav----------------------------------"> <i class="fa-brands fa-medium" ></i> </a>
         </div>
         <div class="content">
             <p class="intro">Hi! I am <span> Ayesha ushani</span></p>
@@ -272,37 +351,92 @@
 
 </section>
  <!--about page-->
-<section id="about">
-<div>
+<!--<section id="about">
+    <div class="main">
+        <img src="assets/images/dp.jpeg" alt="dp" >
+        &lt;!&ndash;<img src="assets/images/dp.jpeg">&ndash;&gt;
+        <div class="about-text">
+            <h2>LET ME INTRODUCE</h2>
+            <h5>Developer <span>& Designer</span></h5>
+            <p >
+                <b> “Innovation thrives on the bravery to defy the conventional and the foresight to craft the remarkable”</b><br>
+                I'm an aspiring UI/UX designer and currently an undergraduate at IJSE. I am passionate about creating user-centric designs and am skilled in tools like Adobe XD, Sketch, and Figma. My focus is on learning and applying design principles to enhance user experiences through effective research, wireframing, prototyping, and visual design.
 
-    <div >
+                I'm eager to build my expertise and apply my skills in real-world projects. Outside of design, I enjoy traveling and photography, which fuel my creativity and perspective. I also participate in design-related community events and volunteer for local design initiatives.
+            </p>
+           <a href="https://akisasenari@gmail.com"> <button type="button">Let's Talk</button></a>
+        </div>
 
-        <h2>LET ME INTRODUCE</h2>
-        <blockquote>
-            “Innovation thrives on the bravery to defy the conventional and the foresight to craft the remarkable”
-        </blockquote>
-        <p>
-            I'm an aspiring UI/UX designer and currently an undergraduate at IJSE. I am passionate about creating user-centric designs and am skilled in tools like Adobe XD, Sketch, and Figma. My focus is on learning and applying design principles to enhance user experiences through effective research, wireframing, prototyping, and visual design.
-        </p>
-        <p>
-            I'm eager to build my expertise and apply my skills in real-world projects. Outside of design, I enjoy traveling and photography, which fuel my creativity and perspective. I also participate in design-related community events and volunteer for local design initiatives.
-        </p>
+
+
     </div>
-</div></section>
+</section>-->
 <!--projects-->
+<!--
 <section id="project">
-<div>
-    <div>
+    <div class="project">
+        <div class="title">
+            <h2>What I Have Done</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>PRF Project</h5>
+                <div class="pra">
+                    <p>Developed a console-based Java application for a Programming Fundamentals coursework.</p>
+                    <p style="text-align: center">
+                        <a class="button" href="#">Read more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>PRF Project</h5>
+                <div class="pra">
+                    <p>Developed a console-based Java application for a Programming Fundamentals coursework.</p>
+                    <p style="text-align: center">
+                        <a class="button" href="#">Read more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>PRF Project</h5>
+                <div class="pra">
+                    <p>Developed a console-based Java application for a Programming Fundamentals coursework.</p>
+                    <p style="text-align: center">
+                        <a class="button" href="#">Read more</a>
+                    </p>
+                </div>
+            </div>
+        </div> <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>PRF Project</h5>
+                <div class="pra">
+                    <p>Developed a console-based Java application for a Programming Fundamentals coursework.</p>
+                    <p style="text-align: center">
+                        <a class="button" href="#">Read more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
 
     </div>
+-->
 
-    <h2>What I have done...</h2>
 
-    <div>
+
+
+   <!-- <div>
         <div>
 
             <h3>PRF Project</h3>
-            <p>Developed a console-based Java application for a Programming Fundamentals coursework.</p>
+
 
         </div>
         <div>
@@ -323,11 +457,12 @@
         <p>
             I designed and built my personal portfolio website to showcase my skills, projects, and professional journey as a UI/UX designer. The website has attracted several job offers and freelance opportunities, serving as a central hub for potential employers and clients to view my work.
         </p>
-    </div>
-</div>
+    </div>-->
+
 </section>
 <!--Assignments-->
-<div>
+<section id="assignments">
+
 
 
     <h2>Assignment</h2>
@@ -391,13 +526,12 @@
 
 
     </div>
-</div>
+</section>
 
-<!--Education-->
-<div>
+<section id="educ">
+
 
     <h2>Education</h2>
-</div>
 
 <div>
     <ul>
@@ -430,9 +564,10 @@
             <li>2021-2023</li>
         </ul>
     </ul>
-</div>
+</div></section>
 
 <!--skills-->
+<section id="skill">
 <div>
     <h1>Ayesha</h1>
     <h2>What to Offer</h2>
@@ -480,9 +615,9 @@
 
     </div>
 </div>
-
+</section>
 <!--gallery-->
-
+<section id="gallery">
 <div>
 
     <h2>Gallery</h2>
@@ -517,9 +652,9 @@
 
     </div>
 </div>
-
+</section>
 <!--contact-->
-
+<section id="contact">
 <div class="contact-section">
     <div class="contact-info">
         <h2>GET IN TOUCH</h2>
@@ -543,7 +678,7 @@
         </form>
     </div>
 </div>
-
+</section>
 
 <!--footer -->
 <footer>
