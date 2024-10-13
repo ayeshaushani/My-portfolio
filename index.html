@@ -23,7 +23,7 @@
 
 </head>
 <style>
-/*hero section*/
+/*----------------------------------------------------------hero section----------------------------------------------------------------*/
     .animate__animated.animate__bounce {
         --animate-duration: 2s;
     }
@@ -93,7 +93,7 @@
     }
     .left-con> .icon> a> .fa-brands  {
         color: #BBB;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .icon{
@@ -201,39 +201,43 @@
     .active{
         position: relative;
     }
-
-    #about{
+    /*------------------------------------------------about page-----------------------------------------------------------------*/
+    #about {
         height: 100vh;
-        width:  100%;
+        width: 100%;
         display: flex;
         background: #262525;
 
     }
-    #about>.main>img{
-        height: 90vh;
-        width: 480px;
+
+    #about > .main > img {
+        height: 70vh;
+        width: 20vw;
         margin-right: 150px;
     }
-    .about-text{
+
+    .about-text {
         width: 550px;
     }
-    .main{
-        width:1130px;
+
+    .main {
+        width: 1130px;
         max-width: 95%;
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
-    .about-text>h2{
+
+    .about-text > h2 {
         color: #5DB9EE;
-        font-size: 75px;
+        font-size: 3rem;
         text-transform: capitalize;
         margin-bottom: 20px;
 
     }
 
-    .about-text>h5{
+    .about-text > h5 {
         color: #FFFFFF;
         letter-spacing: 22px;
         font-size: 22px;
@@ -241,65 +245,307 @@
         text-transform: capitalize;
 
     }
-    .about-text>h5>span{
+
+    .about-text > h5 > span {
         color: #5DB9EE;
     }
 
-    .about-text>p{
+    .about-text > p {
         color: #FFFFFF;
         letter-spacing: 1px;
         line-height: 28px;
         font-size: 18px;
         margin-bottom: 45px;
     }
-    button{
+
+    button {
         background: transparent;
         color: #5DB9EE;
         border: 0.1rem solid #5DB9EE;
         font-size: 1.1rem;
-        padding: 0.8rem 1.5rem ;
+        padding: 0.8rem 1.5rem;
         border-radius: 0.5rem;
         cursor: pointer;
         transition: 0.5s ease;
     }
-    button:hover{
+
+    button:hover {
         background: #5DB9EE;
         color: #262525;
     }
-    .project{
+/*--------------------------------------projects-------------------------------------------------------------------------*/
+    .project {
         height: 100vh;
-        width:  100%;
+        width: 100%;
         background: #262525;
         padding: 100px 0;
 
     }
-    .title>h2{
-        color: #FFFFFF;
+
+    .title > h2 {
+        color: #5DB9EE;
         font-size: 75px;
         width: 1130px;
         margin: 30px auto;
         text-align: center;
     }
-    .box{
-       display: inline-block;
+
+    .box {
+        display: inline-block;
         justify-content: center;
         align-items: center;
         min-height: 200px;
 
     }
-    .card{
-        height: 365px;
+
+    .card {
+        height: 480px;
         width: 335px;
         padding: 20px 35px;
-        background: #BBBBBB;
+        background: #191919;
         border-radius: 20px;
-        margin: 35px;
+        margin: 50px;
         position: relative;
-        overflow:hidden ;
+        overflow: hidden;
         text-align: center;
-
-
+        color: #FFFFFF;
     }
+
+    .card > i {
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        margin: 25px 0;
+        color: #5DB9EE;
+    }
+
+    .card > h5 {
+        color: #FFFFFF;
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+
+    .pra > p {
+        color: #fcfc;
+        font-size: 14px;
+        line-height: 27px;
+        margin-bottom: 25px;
+    }
+
+    .card > .pra > p > .button {
+        background: #5DB9EE;
+        color: #262525;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 9px 22px;
+        border-radius: 30px;
+        transition: 4s;
+    }
+
+/*-------------------------------------------assignments---------------------------------------------------------------*/
+#assignments {
+    height: 100vh;
+    width: 100%;
+    background: #262525;
+    padding: 100px 0;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1{
+
+    font-weight: bold;
+    text-align: center;
+    color: #5DB9EE;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.cols{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.col{
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.container{
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.front,
+.back{
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.back{
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+}
+
+.front:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.container .back{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container .front{
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .back{
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .front{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.front .inner p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.front .inner p:after{
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+
+.front .inner span{
+    color: rgba(255,255,255,0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+@media screen and (max-width: 64rem){
+    .col{
+        width: calc(33.333333% - 2rem);
+    }
+}
+
+@media screen and (max-width: 48rem){
+    .col{
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 32rem){
+    .col{
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+}
+
 
 
 
@@ -345,7 +591,7 @@
     <div class="right-con"></div>
     <div class="design">
         <div class="circle"></div>
-        <div class="circle"></div>
+        <div class="circle"><!--<img src="assets/images/dp.jpeg" class=".profile-pic">--></div>
 
     </div>
 
@@ -392,9 +638,9 @@ projects
         <div class="box">
             <div class="card">
                 <i class="fa-solid fa-bars"></i>
-                <h5>PRF Project</h5>
+                <h5>connect-four game</h5>
                 <div class="pra">
-                    <p>Developed a console-based Java application for a Programming Fundamentals coursework.</p>
+                    <p>This is a game made using JavaFX and Java OOP concepts.</p>
                     <p style="text-align: center">
                         <a class="button" href="#">Read more</a>
                     </p>
@@ -404,131 +650,163 @@ projects
         <div class="box">
             <div class="card">
                 <i class="fa-solid fa-bars"></i>
-                <h5>PRF Project</h5>
+                <h5>Delivery Management system</h5>
                 <div class="pra">
-                    <p>Developed a console-based Java application for a Programming Fundamentals coursework.</p>
+                    <p>Order manager for a delivery system, developed using Java and JavaFX.this is a normal pos system.</p>
                     <p style="text-align: center">
-                        <a class="button" href="#">Read more</a>
+                        <a class="button" href="https://github.com/ayeshaushani/final_project.git">Read more</a>
                     </p>
                 </div>
             </div>
         </div> <div class="box">
             <div class="card">
                 <i class="fa-solid fa-bars"></i>
-                <h5>PRF Project</h5>
+                <h5>Portfolio</h5>
                 <div class="pra">
-                    <p>Developed a console-based Java application for a Programming Fundamentals coursework.</p>
+                    <p> I designed and built my personal portfolio website to showcase my skills, projects, and professional
+                        journey as a UI/UX designer. The website has attracted several job offers and freelance opportunities,
+                        serving as a central hub for potential employers and clients to view my work.</p>
                     <p style="text-align: center">
-                        <a class="button" href="#">Read more</a>
+                        <a class="button" href="https://github.com/ayeshaushani/My-portfolio.git">Read more</a>
                     </p>
                 </div>
             </div>
         </div>
-
     </div>
-
-
-
-
-   <!-- <div>
-        <div>
-
-            <h3>PRF Project</h3>
-
-
-        </div>
-        <div>
-
-            <h3>Connect Four Game</h3>
-            <p>This is a game made using JavaFX and Java OOP concepts.</p>
-
-        </div>
-        <div>
-
-            <h3>Hemantha Enterprise system</h3>
-            <p>Order manager for a delivery system, developed using Java and JavaFX.</p>
-
-        </div>
-    </div>
-
-    <div>
-        <p>
-            I designed and built my personal portfolio website to showcase my skills, projects, and professional journey as a UI/UX designer. The website has attracted several job offers and freelance opportunities, serving as a central hub for potential employers and clients to view my work.
-        </p>
-    </div>-->
 
 </section>
 <!--Assignments-->
 <section id="assignments">
 
 
-
-    <h2>Assignment</h2>
-
-    <div>
-        <!-- Assignment 01 -->
-        <div>
-
-            <h3>Assignment 01</h3>
-
+    <div class="wrapper">
+        <h1>Assignments.</h1>
+        <div class="cols">
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+                        <div class="inner">
+                            <p>Diligord</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="url(https://unsplash.it/511/511/)">
+                        <div class="inner">
+                            <p>Rocogged</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://unsplash.it/502/502/)">
+                        <div class="inner">
+                            <p>Strizzes</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://unsplash.it/503/503/)">
+                        <div class="inner">
+                            <p>Clossyo</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://unsplash.it/504/504/)">
+                        <div class="inner">
+                            <p>Rendann</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://unsplash.it/505/505/)">
+                        <div class="inner">
+                            <p>Reflupper</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
+                        <div class="inner">
+                            <p>Acirassi</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+                        <div class="inner">
+                            <p>Sohanidd</p>
+                            <span>Lorem ipsum</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Assignment 02 -->
-        <div>
-
-            <h3>Assignment 02</h3>
-
-        </div>
-
-        <!-- Assignment 03 -->
-        <div>
-
-            <h3>Assignment 03</h3>
-
-        </div>
-
-        <!-- Assignment 04 -->
-        <div>
-
-            <h3>Assignment 04</h3>
-
-        </div>
-
-        <!-- Assignment 05 -->
-        <div>
-
-            <h3>Assignment 05</h3>
-
-        </div>
-
-        <!-- Assignment 06 -->
-        <div>
-
-            <h3>Assignment 06</h3>
-
-        </div>
-        <!-- Assignment 07 -->
-        <div>
-
-            <h3>Assignment 07</h3>
-
-        </div>
-
-        <!-- Assignment 08 -->
-        <div>
-
-            <h3>Assignment 08</h3>
-
-        </div>
-
-
-
     </div>
 </section>
 
 <section id="educ">
-
-
     <h2>Education</h2>
 
 <div>
